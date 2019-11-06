@@ -37,7 +37,7 @@ public class HomeWork {
         return fileClass;
     }
 
-    public static <T extends Serializable> void baseSerialize(String fileName, T clazz) throws IOException {
+    public static void serialize(String fileName, Object clazz) throws IOException {
         try (FileOutputStream fos = new FileOutputStream(fileName);
              ObjectOutputStream out = new ObjectOutputStream(fos);) {
             out.writeObject(clazz);
@@ -60,7 +60,7 @@ public class HomeWork {
         System.out.println("Данные считаны\n" + jsonFile.toString());
         //шаг 4
         System.out.println("Записываем данные в файла " + BASE_SERIALIZE_FILE_NAME);
-        baseSerialize(BASE_SERIALIZE_FILE_NAME, jsonFile);
+        serialize(BASE_SERIALIZE_FILE_NAME, jsonFile);
         System.out.println("Данные записаны на диск в файл " + BASE_SERIALIZE_FILE_NAME);
     }
 }
