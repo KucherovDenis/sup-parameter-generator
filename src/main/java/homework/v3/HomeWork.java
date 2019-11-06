@@ -31,16 +31,15 @@ public class HomeWork {
         mapper.writerWithDefaultPrettyPrinter().writeValue(url, clazz);
     }
 
-    public static JsonFileClass readJson(File url) throws IOException {
+    public static <T> T readJson(File url, Class<T> clazz) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        final JsonFileClass fileClass = mapper.readValue(url, JsonFileClass.class);
-        return fileClass;
+        return  mapper.readValue(url, clazz);
     }
 
-    public static void serialize(String fileName, Object clazz) throws IOException {
+    public static void serialize(String fileName, Object obj) throws IOException {
         try (FileOutputStream fos = new FileOutputStream(fileName);
              ObjectOutputStream out = new ObjectOutputStream(fos);) {
-            out.writeObject(clazz);
+            out.writeObject(obj);
         }
     }
 
@@ -56,7 +55,7 @@ public class HomeWork {
 
         //шаг 3
         System.out.println("Чтение данных из файла " + JSON_FILE_NAME);
-        JsonFileClass jsonFile = readJson(file);
+        JsonFileClass jsonFile = readJson(file, JsonFileClass.class);
         System.out.println("Данные считаны\n" + jsonFile.toString());
         //шаг 4
         System.out.println("Записываем данные в файла " + BASE_SERIALIZE_FILE_NAME);
