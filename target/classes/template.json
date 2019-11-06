@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "parameters": [
+    {
+      "name": "",
+      "description": "",
+      "isList": false,
+      "roles": [
+        ""
+      ],
+      "type": "",
+      "bundle": [
+        {
+          "path": [
+            {
+              "code": "VERSION",
+              "value": ""
+            },
+            {
+              "code": "CHANNEL",
+              "value": ""
+            },
+            {
+              "code": "SUBSYSTEM",
+              "value": ""
+            },
+            {
+              "code": "TERBANK",
+              "value": ""
+            },
+            {
+              "code": "OSB",
+              "value": ""
+            },
+            {
+              "code": "VSP",
+              "value": ""
+            }
+          ],
+          "values": [
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}

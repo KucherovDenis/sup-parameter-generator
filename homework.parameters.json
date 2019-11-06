@@ -1,0 +1,54 @@
+{
+  "version" : "1.0",
+  "parameters" : [ {
+    "name" : "name1",
+    "description" : "description1",
+    "isList" : false,
+    "roles" : [ "role1", "role2" ],
+    "type" : "type1",
+    "bundle" : [ {
+      "path" : [ {
+        "code" : "code1",
+        "value" : "value3"
+      }, {
+        "code" : "code2",
+        "value" : "value4"
+      } ],
+      "values" : [ "value1", "value2" ]
+    }, {
+      "path" : [ {
+        "code" : "code3",
+        "value" : "value7"
+      }, {
+        "code" : "code4",
+        "value" : "value8"
+      } ],
+      "values" : [ "value5", "value6" ]
+    } ]
+  }, {
+    "name" : "name2",
+    "description" : "description2",
+    "isList" : true,
+    "roles" : [ "role3", "role4" ],
+    "type" : "type2",
+    "bundle" : [ {
+      "path" : [ {
+        "code" : "code5",
+        "value" : "value11"
+      }, {
+        "code" : "code6",
+        "value" : "value12"
+      } ],
+      "values" : [ "value9", "value10" ]
+    }, {
+      "path" : [ {
+        "code" : "code7",
+        "value" : "value15"
+      }, {
+        "code" : "code8",
+        "value" : "value16"
+      } ],
+      "values" : [ "value13", "value14" ]
+    } ]
+  } ]
+}

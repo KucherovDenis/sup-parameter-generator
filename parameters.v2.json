@@ -1,0 +1,2219 @@
+{
+  "parameters": [
+    {
+      "name": "logger.local.level",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "DEBUG"
+      ]
+    },
+    {
+      "name": "logger.filter.denyLogger",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "ru.sbrf.ufs.platform.core.listener.CustomServletRequestListener"
+      ]
+    },
+    {
+      "name": "platform.audit.needValidate",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "BOOLEAN",
+      "values": [
+        "true"
+      ]
+    },
+    {
+      "name": "platform.audit.writer",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "customWriter"
+      ]
+    },
+    {
+      "name": "integration.esbClient.fraudMon.mode",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "SELECTOR"
+      ]
+    },
+    {
+      "name": "defaultCheck.platform.cache",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "catalogServiceEndPoints=SBT-OUIEFS-0103.ca.sbrf.ru:4811,SBT-OUIEFS-0102.ca.sbrf.ru:4811;objectGridName=UfsPlatformGrid;map.appMap=appMap@JSONzip;map.sessionMap=sessionMap@JSONzip;map.workflowMap=workflowMap@JSONzip;"
+      ]
+    },
+    {
+      "name": "defaultCheck.request.cache",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "catalogServiceEndPoints=811-08298198221.ca.sbrf.ru:4811;objectGridName=DefaultcheckGrid;map.requestContext=CheckRequestMap@JSONzip;"
+      ]
+    },
+    {
+      "name": "healthcheck.offline",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "BOOLEAN",
+      "values": [
+        "true"
+      ]
+    },
+    {
+      "name": "StandIn.Enabled",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "BOOLEAN",
+      "values": [
+        "false"
+      ]
+    },
+    {
+      "name": "defaultCheck.standin.service.url",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://sbt-orefs-037.ca.sbrf.ru:9080/ufs-standin-rest-app/getCurrentMode"
+      ]
+    },
+    {
+      "name": "service.currentmode.url",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://sbt-orefs-037.ca.sbrf.ru:9080/ufs-standin-rest-app/getCurrentMode"
+      ]
+    },
+    {
+      "name": "StandIn.CheckTimeInterval",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "LONG",
+      "values": [
+        "5000"
+      ]
+    },
+    {
+      "name": "system.block.name",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "primary"
+      ]
+    },
+    {
+      "name": "StandIn.BufferAppBaseUrl",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://sbt-ouiefs-0092:9080/ufs-buffer-rest-app"
+      ]
+    },
+    {
+      "name": "client.eca.block.rest.url",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://localhost:9961/csa-rest-stub-war/csa_rest_stub/esa_csa/lock_profile"
+      ]
+    },
+    {
+      "name": "defaultCheck.switch",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "ON"
+      ]
+    },
+    {
+      "name": "defaultCheck.notify.async.switch",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "ON"
+      ]
+    },
+    {
+      "name": "defaultcheck.analyze.mock.actionCode",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "DENY"
+      ]
+    },
+    {
+      "name": "defaultcheck.analyze.mock.blockClient",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "BOOLEAN",
+      "values": [
+        "true"
+      ]
+    },
+    {
+      "name": "platform.workflow.url.fraudFlow",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "ufs-fraud-ui/fraudApp.bundle.js"
+      ]
+    },
+    {
+      "name": "defaultCheck.CREDIT.LOAN.timeout",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD_WEB"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "LONG",
+      "values": [
+        "2000"
+      ]
+    },
+    {
+      "name": "defaultCheck.default.timeout",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "LONG",
+      "values": [
+        "2000"
+      ]
+    },
+    {
+      "name": "defaultCheck.dictionaries.service.url",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://sbt-oafs-479.ca.sbrf.ru/data-dictionary-service/"
+      ]
+    },
+    {
+      "name": "defaultCheck.CREDIT.LOAN.action",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD_WEB"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "MESSAGE,SUBSTITUTE,NOTIFYCLIENT,CLIENTBLOCK"
+      ]
+    },
+    {
+      "name": "defaultCheck.CREDIT.APPROVED_LOAN.action",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD_WEB"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "MESSAGE,SUBSTITUTE"
+      ]
+    },
+    {
+      "name": "defaultCheck.CREDIT.LOAN.switch",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD_WEB"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "ON"
+      ]
+    },
+    {
+      "name": "defaultCheck.default.REVIEW.NONBLOCK.IN.text",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "Ваша операция приостановлена. Перезвоните в банк."
+      ]
+    },
+    {
+      "name": "defaultCheck.default.REVIEW.NONBLOCK.OUT.text",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "Ваша операция приостановлена. Вам перезвонит специалист банка."
+      ]
+    },
+    {
+      "name": "defaultCheck.default.REVIEW.BLOCK.IN.text",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "Ваша операция приостановлена. Ваш профиль заблокирован. Перезвоните в банк."
+      ]
+    },
+    {
+      "name": "defaultCheck.default.REVIEW.BLOCK.OUT.text",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "Ваша операция приостановлена. Ваш профиль заблокирован. Вам перезвонит специалист банка."
+      ]
+    },
+    {
+      "name": "defaultCheck.default.DENY.NONBLOCK.NONE.text",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "Ваша операция заблокирована."
+      ]
+    },
+    {
+      "name": "defaultCheck.default.DENY.BLOCK.NONE.text",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "Ваша операция заблокирована. Ваш профиль заблокирован."
+      ]
+    },
+    {
+      "name": "defaultCheck.CREDIT.LOAN.REVIEW.NONBLOCK.OUT.substitute",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD_WEB"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "ALLOW,NONBLOCK,NONE"
+      ]
+    },
+    {
+      "name": "defaultCheck.WEB.templateSMS",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "BusinessProcess,Operation,Step"
+      ]
+    },
+    {
+      "name": "defaultCheck.WEB.ALLOW.NONBLOCK.NONE.textSMS",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "Операция одобрена"
+      ]
+    },
+    {
+      "name": "platform.workflow.autourl.defaultCheckFlow",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://localhost:${defaultcheck.port}/defaultcheck-bh/default-check-flow"
+      ]
+    },
+    {
+      "name": "platform.workflow.autourl.fraudFlow",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://localhost:${fraud.port}/fraud-bh/auto/fraud-flow"
+      ]
+    },
+    {
+      "name": "integration.stubs.stubModeEnable",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "BOOLEAN",
+      "values": [
+        "true"
+      ]
+    },
+    {
+      "name": "integration.stubs.PPRB.SrvPutBusinessOperationEvent.001.enable",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "BOOLEAN",
+      "values": [
+        "true"
+      ]
+    },
+    {
+      "name": "platform.workflow.autourl.fraudSperpayFlow",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://localhost:9080/auto/clientMain"
+      ]
+    },
+    {
+      "name": "platform.workflow.autourl.defaultCheckNotifyFlow",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://localhost:${defaultcheck.port}/defaultcheck-bh/auto/default-check-flow"
+      ]
+    },
+    {
+      "name": "efsbfs.fm.eca.default.reason.text",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "default reason"
+      ]
+    },
+    {
+      "name": "defaultCheck.notifyClient.system",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "UNS"
+      ]
+    },
+    {
+      "name": "defaultcheck.notify.url",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://sbt-oafs-1258.vm.mos.cloud.sbrf.ru:9080/notification.core/rest/"
+      ]
+    },
+    {
+      "name": "integration.UNS.mq.multipointMode",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "BOOLEAN",
+      "values": [
+        "true"
+      ]
+    },
+    {
+      "name": "defaultCheck.dictionaries.service.url",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://10.116.252.247/data-dictionary-service/"
+      ]
+    },
+    {
+      "name": "defaultcheck.domain",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "ALPHA"
+      ]
+    },
+    {
+      "name": "task_scheduler.single_tasks.base.url",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://localhost:9080/task-scheduler-war​"
+      ]
+    },
+    {
+      "name": "techbreak.server.rest.url",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "http://localhost:9080/circuit-breaker-engine-web/rest/v1"
+      ]
+    },
+    {
+      "name": "task_scheduler.schedule_reloader",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "0/20 * * * * ?"
+      ]
+    },
+    {
+      "name": "tech_breaks.client.StatisticsUploaderJob",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "0/5 * * * * ?"
+      ]
+    },
+    {
+      "name": "techbreak.client.save.interval",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "LONG",
+      "values": [
+        "20"
+      ]
+    },
+    {
+      "name": "techBreak.defaultErrorMessageTemplate",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "По техническим причинам Вы не можете выполнить данную операцию${tillDateTime}. Пожалуйста, повторите попытку позже."
+      ]
+    },
+    {
+      "name": "integration.services.ASFraud.SrvOperationCheckForFraudAsyn.001.timeout",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "LONG",
+      "values": [
+        "5000"
+      ]
+    },
+    {
+      "name": "integration.services.ASFraud.SrvOperationCheckForFraudAsyn.001.correlationType",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "MESSAGE_TO_CORRELATION_ID"
+      ]
+    },
+    {
+      "name": "ufs.standin.blockid",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "primary"
+      ]
+    },
+    {
+      "name": "integration.client.SyncClient_ASFraud.sendMode",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "CLASSIC"
+      ]
+    },
+    {
+      "name": "integration.client.SyncClient_ASFraud.receiveMode",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "CLASSIC"
+      ]
+    },
+    {
+      "name": "integration.client.SyncClient_ASFraud.checkRequestSchema",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "BOOLEAN",
+      "values": [
+        "true"
+      ]
+    },
+    {
+      "name": "integration.client.SyncClient_ASFraud.checkResponseSchema",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "BOOLEAN",
+      "values": [
+        "true"
+      ]
+    },
+    {
+      "name": "integration.UNS.jms.client.connectionFactory",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "jms/UNS/connectionFactory"
+      ]
+    },
+    {
+      "name": "integration.UNS.jms.client.requestQueue",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "jms/queue/notification/notification"
+      ]
+    },
+    {
+      "name": "ru.sbrf.ufs.enabled.collect.execution.time",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "BOOLEAN",
+      "values": [
+        "false"
+      ]
+    },
+    {
+      "name": "integration.serviceStateExecutor.corePoolSize",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "LONG",
+      "values": [
+        "5"
+      ]
+    },
+    {
+      "name": "integration.serviceStateExecutor.maxPoolSize",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "LONG",
+      "values": [
+        "15"
+      ]
+    },
+    {
+      "name": "integration.serviceStateExecutor.queueCapacity",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "LONG",
+      "values": [
+        "200"
+      ]
+    },
+    {
+      "name": "integration.services.EFS.SrvSupResetLocalCacheMQTopic.001.correlationType",
+      "path": [
+        {
+          "name": "VERSION",
+          "value": "false"
+        },
+        {
+          "name": "CHANNEL",
+          "value": "${channel-code}"
+        },
+        {
+          "name": "SUBSYSTEM",
+          "value": "UFS_FRAUD"
+        },
+        {
+          "name": "TERBANK",
+          "value": null
+        },
+        {
+          "name": "OSB",
+          "value": null
+        },
+        {
+          "name": "VSP",
+          "value": null
+        }
+      ],
+      "type": "STRING",
+      "values": [
+        "MESSAGE_TO_CORRELATION_ID"
+      ]
+    }
+  ]
+}
+integration.serviceStateExecutor.corePoolSize 5
+integration.serviceStateExecutor.maxPoolSize 15
+integration.serviceStateExecutor.queueCapacity 200
+integration.services.EFS.SrvSupResetLocalCacheMQTopic.001.correlationType MESSAGE_TO_CORRELATION_ID
