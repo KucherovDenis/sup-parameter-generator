@@ -8,7 +8,7 @@ import java.io.ObjectInput;
 import java.io.ObjectOutput;
 import java.util.List;
 
-public class JSonFileClass implements Externalizable {
+public class JsonFileClass implements Externalizable {
     public static final long SerialVersionUID = 1L;
 
     private String version;

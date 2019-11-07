@@ -103,7 +103,8 @@ public class JsonParameters implements Externalizable {
         isList = in.readBoolean();
         name = in.readUTF();
         roles = (List<String>)in.readObject();
-
+        type = in.readUTF();
+        bundle = (List<Bundle>) in.readObject();
 
     }
 }

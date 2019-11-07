@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class JsonFileCreator {
+class JsonFileCreator {
     private static Map<String, Integer> names = new HashMap<>();
 
     private static String createString(String name) {
