@@ -25,15 +25,16 @@ public class HomeWork {
 
     private static final String JSON_FILE_NAME = "homework.parameters.json";
     private static final String BASE_SERIALIZE_FILE_NAME = "homework.parameters.ser";
+    private static final String EXTERNALIZABLE_FILE_NAME = "homework.parameters.exter";
 
-    public static void writeJson(File url, JsonFileClass clazz) throws IOException {
+    public static void writeJson(File file, JsonFileClass json) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        mapper.writerWithDefaultPrettyPrinter().writeValue(url, clazz);
+        mapper.writerWithDefaultPrettyPrinter().writeValue(file, json);
     }
 
-    public static <T> T readJson(File url, Class<T> clazz) throws IOException {
+    public static <T> T readJson(File file, Class<T> clazz) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        return  mapper.readValue(url, clazz);
+        return  mapper.readValue(file, clazz);
     }
 
     public static void serialize(String fileName, Object obj) throws IOException {
